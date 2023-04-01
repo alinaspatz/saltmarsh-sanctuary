@@ -1,0 +1,41 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+
+.close-button:hover {
+text-shadow: 0 0 7px #FFEB3B;
+}
+.close-button {
+padding-bottom:5px;
+}
+.dg .c select {
+    margin-top: 1px;
+}
+.dg li:not(.folder) {
+    background: rgba(0,0,0,0);
+/*     border-bottom: 1px solid #fff; */
+  padding-top:5px;
+  line-height:24px;
+  width:220px;
+}
+.dg .property-name{
+    width:70px;
+
+}
+.dg.a {
+       border: .5px solid #fff;
+}
+.dg.main .close-button{
+  line-height:25px;
+         border: .5px solid #fff;
+
+}
+select {
+/*   font-family: 'Georgia', serif; */
+  font-size:9pt;
+}
