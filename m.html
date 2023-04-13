@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+ 
+      
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+    <video style="top: -250px;" src='m.mov' autoplay loop playsinline muted></video>
+    <main>
+      
+      <div class="canvas">
+        <script src="sketch.js"></script> <script
+      src="dat-gui.js"></script>
+      </div>
+
+
+      <div id="area"></div>
+<a style="text-decoration:none"  href="map.html" class="backbox"><span>ᐸ</span></a>
+      <div class="container">
+      <a style="text-decoration:none" class="counterbox" href="https://savebay.org/get-involved/donate/" target="_blank" rel="noopener noreferrer">
+
+        <!-- <div>Score : <p id = "scoreText">0</p></div> -->
+        <span class="countstyle" style="line-height:33px;">Donate $</span><span class="countstyle" id="result">0</span> 
+        <script>
+           var count = 0;
+           var area = document.getElementById("area");
+           var result = document.getElementById("result");
+           var count2 = 0;
+  var area2 = document.getElementById("area2");
+  var result2 = document.getElementById("result2");
+           area.onclick = function() {
+              count++;
+              result.innerHTML = count;
+              count2++;
+     result2.innerHTML = count2;
+           }
+        </script>
+<span class="countstyle">to save </span><span class="countstyle" id="result2">0</span>  <span class="countstyle">sqft of salt marsh in RI</span>
+<script>
+  var count2 = 0;
+  var area2 = document.getElementById("area2");
+  var result2 = document.getElementById("result2");
+  area2.onclick = function() {
+     count2++;
+     result2.innerHTML = count2;
+  }
+</script>
+</a>
+    </div>
+<!--     
+    <div class="counter">
+      <p>Clicks: <a id="clicks">0</a></p>
+
+    </div> -->
+
+  </main>
+
+  </body>
+</html>

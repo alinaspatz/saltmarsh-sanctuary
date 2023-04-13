@@ -1,27 +1,107 @@
+@font-face {
+  font-family: PirelliItalic;
+  src: url('JLPirelliTrial-RegularItalic.otf')
+    format("opentype");
+}
+@font-face {
+  font-family: PirelliRegular;
+  src: url('JLPirelliTrial-Regular.otf')
+    format("opentype");
+}
+
+@font-face {
+  font-family: PirelliThinItalic;
+  src: url('JLPirelliTrial-ThinItalic.otf')
+    format("opentype");
+}
+@font-face {
+  font-family: PirelliThin;
+  src: url('JLPirelliTrial-Thin.otf')
+    format("opentype");
+}
+@font-face {
+  font-family: PirelliMediumItalic;
+  src: url('JLPirelliTrial-MediumItalic.otf')
+    format("opentype");
+}
+@font-face {
+  font-family: PirelliMedium;
+  src: url('JLPirelliTrial-Medium.otf')
+    format("opentype");
+}
+@font-face {
+  font-family: PirelliLightItalic;
+  src: url('JLPirelliTrial-LightItalic.otf')
+    format("opentype");
+}
+@font-face {
+  font-family: PirelliLight;
+  src: url('JLPirelliTrial-Light.otf')
+    format("opentype");
+}
+@font-face {
+  font-family: PirelliThinItalic;
+  src: url('JLPirelliTrial-ThinItalic.otf')
+    format("opentype");
+}
+@font-face {
+  font-family: PirelliThin;
+  src: url('JLPirelliTrial-Thin.otf')
+    format("opentype");
+}
+@font-face {
+  font-family: PirelliBoldItalic;
+  src: url('JLPirelliTrial-BoldItalic.otf')
+    format("opentype");
+}
+@font-face {
+  font-family: PirelliBold;
+  src: url('JLPirelliTrial-Bold.otf')
+    format("opentype");
+}
+
+@font-face {
+  font-family: DirectorBold;
+  src: url('Director-bold.otf')
+    format("opentype");
+}
+@font-face {
+  font-family: DirectorRegular;
+  src: url('Director-Regular.otf')
+    format("opentype");
+}
+@font-face {
+  font-family: DirectorLight;
+  src: url('Director-Light.otf')
+    format("opentype");
+}
+
 html, body {
   margin: 0;
   padding: 0;
+  /* background-color: rgb(52, 52, 52); */
 }
 canvas {
   display: block;
 }
 
-
 .close-button:hover {
 text-shadow: 0 0 7px #FFEB3B;
 }
 .close-button {
-padding-bottom:5px;
+/* padding-bottom:5px; */
+margin-top:3px;
+
 }
 .dg .c select {
     margin-top: 1px;
 }
 .dg li:not(.folder) {
-    background: rgba(0,0,0,0);
+    /* background: none; */
 /*     border-bottom: 1px solid #fff; */
-  padding-top:5px;
-  line-height:24px;
-  width:220px;
+  /* padding-bottom:5px; */
+  
+  width:235px;
 }
 .dg .property-name{
     width:70px;
@@ -31,11 +111,185 @@ padding-bottom:5px;
        border: .5px solid #fff;
 }
 .dg.main .close-button{
-  line-height:25px;
-         border: .5px solid #fff;
+  line-height:32px;
+  margin-top: 0px;
+text-align: center;
+font-size: 16px; 
+display:grid;
+align-content: center;
+align-content: center;
+ margin-bottom: 0px;
+  height:30px;
+  padding-right:0px;
 
 }
 select {
-/*   font-family: 'Georgia', serif; */
-  font-size:9pt;
+  font-family: 'PirelliLight', sans-serif;
+  font-size:11pt;
+}
+.title { 
+font-family: 'DirectorLight', serif;
+font-size: 7.8em;
+line-height:1.14em;
+letter-spacing: -.04em;
+position: relative;
+text-align: center;
+color:#538e3f ;
+padding-top:11.7vw;
+
+
+}
+.title:hover{
+  text-shadow: 0 0 50px #ffeb3b94;
+
+}
+.container { 
+  position: relative;
+  margin: 0 auto;
+
+}
+.color{
+  width:100vw;
+  height:100vh;
+  background-color: rgba(250,250,250,.1);
+}
+.counterbox {
+    border: 1px solid #538e3f;
+    width: 310px;
+    height: 38px;
+    position: fixed;
+    background-color: #fff;
+    text-align: center;
+    right: 245px;
+    top: -1px;
+    color: #538e3f;
+    font-family: 'PirelliLight', sans-serif;
+    font-size:12pt;
+    z-index: 10;
+}
+  .counterbox:hover {
+    text-shadow: 0 0 7px #FFEB3B;
+    
+}
+.archivebox {
+  border: 1px solid #538e3f;
+  width: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  height: 38px;
+  position:absolute;
+  background-color: #fff;
+  text-align: center;
+  right: 162px;
+  top: 0px;
+  color: #538e3f;
+  font-family: 'PirelliLight', sans-serif;
+  font-size:12pt;
+  z-index: 10;
+}
+.archivebox:hover {
+  text-shadow: 0 0 7px #FFEB3B;
+}
+.aboutbox {
+  border: 1px solid #538e3f;
+  width: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  height: 38px;
+  position: fixed;
+  background-color: #fff;
+  text-align: center;
+  right: 1px;
+  top: 0px;
+  color: #538e3f;
+  font-family: 'PirelliLight', sans-serif;
+  font-size:12pt;
+  z-index: 10;
+}
+.aboutbox:hover {
+  text-shadow: 0 0 7px #FFEB3B;
+}
+/* .countstyle:hover {
+  text-shadow: 0 0 7px #FFEB3B;
+  } */
+  ::selection {
+    background:  #ffeb3b4d; /* WebKit/Blink Browsers */
+  }
+  ::-moz-selection {
+    background:  #ffeb3b4d; /* Gecko Browsers */
+  }
+  #area {
+    width: 100vw;
+    height: 100vh;
+    margin-top:50px;
+    z-index: 0;
+    position: fixed;
+
+  }
+  #area2 {
+    width: 100vw;
+    height: 100vh;
+    margin-top:50px;
+    z-index: 0;
+    position: fixed;
+  }
+
+  .backbox {
+    border: .7px solid #538e3f;
+    width: 41px;
+    height: 34px;
+    position: fixed;
+    text-align: center;
+    left: 0px;
+    top: -1px;
+    color: #538e3f;
+    font-family: 'PirelliThin', sans-serif light;
+    background-color: #fff;
+    font-size:13pt;
+    padding-top:9px;
+
+}
+.backbox:hover {
+  text-shadow: 0 0 7px #FFEB3B;
+}
+
+video {
+  object-fit: cover;
+  /* filter: brightness(80%);  */
+  /* opacity: 70%; */
+   width: 100vw;
+  height: auto;
+  position: fixed;
+  left: 0;
+  bottom:0;
+  z-index: -10;
+}
+.map {
+  width: 100%;
+  height: auto;
+}
+.enterbox {
+  border: 1px solid #538e3f;
+  width: auto;
+  margin-top:80px;
+  padding-left: 70px;
+  padding-right: 70px;
+  height: 38px;
+  background-color: #fff;
+  text-align: center;
+  color: #538e3f;
+  font-family: 'PirelliLight', sans-serif;
+  font-size:12pt;
+  z-index: 10;
+  position: absolute; 
+
+
+}
+.enterbox:hover {
+  text-shadow: 0 0 7px #FFEB3B;
+}
+
+.outer {
+  display: flex;
+  justify-content: center;
 }
