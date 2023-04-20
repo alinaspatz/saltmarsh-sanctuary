@@ -235,7 +235,7 @@ padding-top:11.7vw;
   }
 
   .backbox {
-    border: .7px solid #538e3f;
+    border: 1px solid #538e3f;
     width: 41px;
     height: 34px;
     position: fixed;
@@ -252,6 +252,47 @@ padding-top:11.7vw;
 .backbox:hover {
   text-shadow: 0 0 7px #FFEB3B;
 }
+
+.flowerbox {
+  border: 1px solid #538e3f;
+  width: 44px;
+  height: 34px;
+  position: fixed;
+  text-align: center;
+  right: 0px;
+  top: -1px;
+  color: #538e3f;
+  font-family: 'PirelliThin', sans-serif light;
+  background-color: #fff;
+  font-size:23pt;
+  line-height: 23px;
+  padding-top:9px;
+
+}
+.flowerbox:hover {
+text-shadow: 0 0 7px #FFEB3B;
+}
+
+.morebox {
+  border: 1px solid #538e3f;
+  width: 41px;
+  height: 34px;
+  position: fixed;
+  text-align: center;
+  left: 41px;
+  top: -1px;
+  color: #538e3f;
+  font-weight: 100;
+  font-family: sans-serif;
+  background-color: #fff;
+  font-size:18pt;
+  line-height: 25px;
+  padding-top:9px;
+}
+.morebox:hover {
+text-shadow: 0 0 7px #FFEB3B;
+}
+
 
 video {
   object-fit: cover;
@@ -293,3 +334,163 @@ video {
   display: flex;
   justify-content: center;
 }
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 180px;
+  background-color: #fff;
+  color: #538e3f;
+  font-family: 'PirelliLight', sans-serif;
+      font-size:12pt;
+        background: white;
+        text-align: left;
+        border: 1px solid #538e3f;
+          border-radius: 0px;
+  padding: 15px 15px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 10;
+  top: 120%;
+  left: 0px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+
+/* First the Grid */
+.gallery-grid {
+  display: grid;
+  justify-self: center;
+  justify-items: center;
+  /* grid-template-columns: repeat(auto-fill, minmax(590px, 1fr)); */
+  grid-gap: 0px;
+  justify-items: center;
+  margin: 5vw;  
+  grid-template-columns:1fr 1fr ;
+  padding: 0px;
+  margin-top: 0px;
+  /* width: 100vw; */
+  object-fit:none;
+  left:0px;
+
+}
+
+/* The Picture Frame */
+.gallery-frame {
+  padding: 0px;
+  margin:0px;
+  padding-left: 0px;
+  margin-top: 80px;
+  font-size: 1.2rem;
+  text-align: center;
+height:22vw;
+width:auto;
+left:0px;
+
+  background-color: white;
+  color: #538e3f;
+  font-family: 'PirelliLight', sans-serif;
+      font-size:12pt;  object-fit: cover;
+}
+
+/* The Images */
+.gallery-img {
+justify-content: center;
+align-items: center;
+height: 98%;
+left:0px;
+border: 1.0px solid #538e3f;
+filter:drop-shadow( 1px 1px 10px #ffe6005a);
+
+}
+
+
+.artitle { 
+  font-family: 'DirectorLight', serif;
+  font-size: 6em;
+  line-height:1em;
+  letter-spacing: -.04em;
+  text-align: center;
+  color:#538e3f ;
+  padding-top:100px;
+  padding-bottom:2.53vw;
+
+  /* text-shadow: 0px 0px 40px #ffe600d1; */
+
+  }
+  /* .artitle:hover{
+    text-shadow: 0 0 50px #ffeb3bc4;
+  
+  } */
+  .artext {
+    width: auto;
+    margin-top:40px;
+    padding-bottom: 30px;
+width: 580px;
+    text-align: center;
+    color: #538e3f;
+    font-family: 'PirelliLight', sans-serif;
+    font-size:13pt;
+    z-index: 10;
+    display: block;
+    margin: auto;
+
+  }
+
+  .arbox {
+    border: 1px solid #538e3f;
+    padding-left: 13px;
+    padding-right:13px;
+    padding-top: 3px;
+    padding-bottom: 6px;
+    margin-top:10px ;
+    background-color: #fff;
+    text-align: center;
+    color: #538e3f;
+    font-family: 'PirelliLight', sans-serif;
+    font-size:13pt;
+    z-index: 10;
+text-align: center;
+align-self: center;
+justify-content: center;
+margin: auto;
+  width: 200px;
+  }
+  .arbox:hover {
+    text-shadow: 0 0 7px #FFEB3B;
+  }
+  .abtitle { 
+    font-family: 'DirectorLight', serif;
+    font-size: 7.5em;
+    line-height:1em;
+    letter-spacing: -.03em;
+    position: relative;
+    text-align: center;
+    color:#538e3f ;
+    padding-top:1vw;
+    
+    
+    }
+    .abtitle:hover{
+      text-shadow: 0 0 50px #ffeb3b94;
+    
+    }
+    .abtext {
+      width: auto;
+      margin-top:40px;
+      padding-bottom: 30px;
+  width: 580px;
+      text-align: left;
+      color: #538e3f;
+      font-family: 'PirelliLight', sans-serif;
+      font-size:13pt;
+      z-index: 10;
+      display: block;
+      margin: auto;
+  
+    }
+  
