@@ -411,12 +411,12 @@ filter:drop-shadow( 1px 1px 10px #ffe6005a);
 
 .artitle { 
   font-family: 'DirectorLight', serif;
-  font-size: 6.7em;
+  font-size: 6.6em;
   line-height:1em;
   letter-spacing: -.04em;
   text-align: center;
   color:#538e3f ;
-  padding-top:70px;
+  padding-top:80px;
   padding-bottom:2.53vw;
 
   /* text-shadow: 0px 0px 40px #ffe600d1; */
